@@ -1,0 +1,10 @@
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
