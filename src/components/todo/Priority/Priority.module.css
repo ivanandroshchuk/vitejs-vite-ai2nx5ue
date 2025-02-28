@@ -1,0 +1,55 @@
+.priorityIcon {
+  font-size: 20px;
+}
+
+.prioritySwitcher {
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.radioGroup {
+  display: flex;
+  width: fit-content;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.radioGroup:focus-within {
+  outline: 2px solid #007bff;
+}
+
+.radioLabel {
+  position: relative;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checked {
+  background-color: #D9D9D9;
+}
+
+.radioButton:not(:last-child) {
+  border-right: 1px solid #ededed;
+}
+
+.radioButton:hover {
+  background-color: #D9D9D980;
+}
+
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

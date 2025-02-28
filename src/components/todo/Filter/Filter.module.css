@@ -1,0 +1,58 @@
+.filtersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  flex: 1;
+}
+
+.filterGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+.input,
+.select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.refetchWrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.refetchButton {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .filtersContainer {
+    flex-direction: column;
+  }
+
+  .filterGroup {
+    width: 100%;
+  }
+
+  .refetchButton {
+    width: 100%;
+  }
+}

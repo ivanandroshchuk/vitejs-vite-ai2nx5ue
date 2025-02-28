@@ -1,0 +1,7 @@
+.indicatorWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  gap: 12px;
+}

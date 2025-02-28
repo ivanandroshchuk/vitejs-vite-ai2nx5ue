@@ -1,7 +1,8 @@
 import { mockApi } from './mockData';
+import { BatchUpdateRequest, CreateTodoRequest, GetTodosRequest, UpdateTodoRequest } from '../types/todo';
 
 export const todoApi = {
-  async getTodos(params = {}) {
+  async getTodos(params: GetTodosRequest = {}) {
     try {
       return await mockApi.getTodos(params);
     } catch (error) {
@@ -9,9 +10,9 @@ export const todoApi = {
     }
   },
 
-  async createTodo(title: string) {
+  async createTodo(params: CreateTodoRequest) {
     try {
-      return await mockApi.createTodo(title);
+      return await mockApi.createTodo(params);
     } catch (error) {
       if (error instanceof Error) throw error;
       throw new Error('Failed to create todo');
@@ -20,7 +21,7 @@ export const todoApi = {
 
   async updateTodo(
     id: string,
-    updates: Partial<{ title: string; completed: boolean }>
+    updates: UpdateTodoRequest
   ) {
     try {
       return await mockApi.updateTodo(id, updates);
@@ -38,9 +39,9 @@ export const todoApi = {
     }
   },
 
-  async batchUpdate(ids: string[], action: 'complete' | 'delete') {
+  async batchUpdate(params: BatchUpdateRequest) {
     try {
-      return await mockApi.batchUpdateTodos(ids, action);
+      return await mockApi.batchUpdateTodos(params);
     } catch (error) {
       throw new Error('Failed to perform batch update');
     }

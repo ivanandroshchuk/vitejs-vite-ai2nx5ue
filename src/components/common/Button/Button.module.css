@@ -1,8 +1,18 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 10px;
   cursor: pointer;
+  background-color: #D9D9D9;
+  border: none;
 }
 
 .button:hover {
+  background-color: #D9D9D980;
 }
 
 .button:disabled {

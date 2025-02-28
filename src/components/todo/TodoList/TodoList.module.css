@@ -1,0 +1,9 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loader {
+  margin: 20px auto;
+}

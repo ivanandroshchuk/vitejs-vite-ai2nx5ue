@@ -1,0 +1,25 @@
+.input {
+  width: 100%;
+  padding: 12px 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.input::placeholder {
+  color: #00000080;
+}
+
+.input:focus, .input:hover {
+  border-color: #000000;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.invalid {
+  border-color: #F11414;
+}
