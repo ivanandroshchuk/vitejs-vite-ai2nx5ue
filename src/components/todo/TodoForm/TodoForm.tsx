@@ -31,7 +31,7 @@ const validator = <K extends FormFieldName>(name: K, value: string) => {
   if (name === FormFieldName.TITLE) {
     const trimmedValue = value.trim();
 
-    return { value: trimmedValue, isValid: !!trimmedValue && trimmedValue.length <= 100 };
+    return { value, isValid: !!trimmedValue && trimmedValue.length <= 100 };
   }
 
   return { value };
